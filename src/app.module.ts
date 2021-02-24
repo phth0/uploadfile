@@ -7,7 +7,7 @@ import { AppService } from './app.service';
   imports: [
     MulterModule.registerAsync({
       useFactory: () => ({
-        dest: './upload',
+        dest: process.env.UPLOAD || '.upload',
       }),
     }),
   ],
