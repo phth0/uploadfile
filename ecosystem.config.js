@@ -32,7 +32,8 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:phth0/uploadfile.git',
       path: '/data/prod/uploadfile',
-      'pre-deploy-local': 'git pull',
+      'pre-deploy-local':
+        'GIT_SSH_COMMAND="ssh -i ~/.ssh/gh_uploadfile" git pull',
       'post-deploy':
         'npm install && npm run build && pm2 reload ecosystem.config.js && pm2 startOrRestart ecosystem.config.js --env staging',
       'pre-setup': '',
