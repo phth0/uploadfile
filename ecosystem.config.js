@@ -20,6 +20,7 @@ module.exports = {
         PORT: 3100,
         NODE_ENV: 'staging',
         UPLOAD: '/data/clientlog',
+        GIT_SSH_COMMAND: 'ssh -i ~/.ssh/gh_uploadfile',
       },
       env_dev: {},
     },
