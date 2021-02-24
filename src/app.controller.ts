@@ -1,5 +1,6 @@
 import { Controller, Get, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { fstat } from 'fs';
 import { AppService } from './app.service';
 
 @Controller()
