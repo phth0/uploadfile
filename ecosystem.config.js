@@ -1,4 +1,3 @@
-const { forwardArgsToSelectionSet } = require('graphql-tools');
 
 module.exports = {
   apps: [
